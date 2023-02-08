@@ -1,14 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:goodtechminds/core/constants/constants.dart';
-import '../../core/colors/colors.dart';
 import 'widgets/blueborderbox.dart';
 import 'widgets/firstwidget.dart';
 import 'widgets/forthwidget.dart';
 import 'widgets/ratingreview.dart';
 import 'widgets/sandwichtile.dart';
 import 'widgets/secondRow.dart';
-import 'widgets/vegbutton.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({super.key});
