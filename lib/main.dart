@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:goodtechminds/view/home/firstpage.dart';
+import 'package:get/get.dart';
+import 'package:goodtechminds/view/buttonscreen/mainscreen.dart';
 
 void main() {
   runApp(const GoodTechMinds());
@@ -10,8 +11,8 @@ class GoodTechMinds extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(debugShowCheckedModeBanner: false,
-      home: FirstPage(),
+    return  GetMaterialApp(debugShowCheckedModeBanner: false,
+      home: MainScreen(),
     );
   }
 }

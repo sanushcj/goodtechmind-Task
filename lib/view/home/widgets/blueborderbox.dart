@@ -13,14 +13,15 @@ class BlueborderBox extends StatelessWidget {
           border: Border.all(color: Colors.blueAccent),
           borderRadius: BorderRadius.circular(5)),
       child: Row(
-        children: const [
+        children: const <Widget>[
           Icon(
             Icons.square,
             color: Colors.blue,
             size: 11,
           ),
           Text(
-            '''Sanush Selftaught 
+            '''
+Sanush Selftaught 
 Flutter ''',
             style:
                 TextStyle(color: Color.fromARGB(255, 0, 64, 175), fontSize: 7),

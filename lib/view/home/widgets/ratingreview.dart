@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:goodtechminds/core/colors/colors.dart';
+import '../../../core/colors/colors.dart';
 
 import '../../../core/constants/constants.dart';
 
@@ -15,9 +15,8 @@ class RatingReviewContainer extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(21),
-          boxShadow: const [
+          boxShadow: const <BoxShadow> [
             BoxShadow(
-              color: rrblack,
               blurRadius: 02.0,
               offset: Offset(0.0, 0.1),
             )
@@ -32,20 +31,20 @@ class RatingReviewContainer extends StatelessWidget {
                 color: rrwhite,
               ),
               child: Column(
-                children: [
+                children: <Widget>[
                   Expanded(
                     child: Container(
                       alignment: Alignment.center,
                       color: Colors.green,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Text(
+                        children: const <Widget> [
+                          Text(
                             '4.2',
                             style: TextStyle(color: rrwhite),
                           ),
                           rrwidth5,
-                          const Icon(
+                          Icon(
                             Icons.star,
                             color: rrwhite,
                             size: 14,
@@ -56,7 +55,7 @@ class RatingReviewContainer extends StatelessWidget {
                   ),
                   Expanded(
                     child: Column(
-                      children: const [
+                      children: const <Widget>[
                         Text(
                           '200',
                           style: TextStyle(color: rrblack, fontSize: 12),

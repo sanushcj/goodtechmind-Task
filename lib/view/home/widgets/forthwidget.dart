@@ -13,10 +13,10 @@ class ForthWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 25.0,right: 15),
       child: Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
+        children: <Widget>[
           SizedBox(
             child: Row(
-              children: const [
+              children: const <Widget> [
                 VegButton(img: 'asset/img/veg.png', text: 'Veg'),
                 rrwidth12,
                 VegButton(
@@ -33,7 +33,7 @@ class ForthWidget extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 2.0,right: 7),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
+                  children: const <Widget> [
                     Icon(
                       Icons.search,
                       color: Colors.red,

@@ -16,7 +16,7 @@ class FirstTextWidget extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: const <Widget>[
             Text(
               'Dessert Pizza, Fastfood',
               style: TextStyle(color: Colors.grey, fontSize: 13.5),

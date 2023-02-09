@@ -1,5 +1,7 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:goodtechminds/core/constants/constants.dart';
+
+import '../../../core/constants/constants.dart';
 
 import 'greentimedelivery.dart';
 
@@ -13,7 +15,7 @@ class SecondRow extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 25.0),
       child: Row(
-        children: const [
+        children: const <Widget> [
           GreenTimeDelivery(
             icon: Icons.alarm,
             text: '35 mins',

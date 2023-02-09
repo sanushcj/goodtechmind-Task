@@ -15,7 +15,7 @@ class VegButton extends StatelessWidget {
     return Container(
       width: 50,
       height: 15,
-      decoration: BoxDecoration( boxShadow: const [
+      decoration: BoxDecoration( boxShadow: const <BoxShadow>[
         BoxShadow(
           color: Colors.black54,
             blurRadius: 1.0,
@@ -26,7 +26,7 @@ class VegButton extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         
-        children: [
+        children: <Widget>[
           SizedBox(
               width: 10,
               height: 10,

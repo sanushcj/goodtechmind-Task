@@ -13,7 +13,7 @@ final String text;
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: [
+      children: <Widget>[
          Icon(
           icon ,
           color: rrgreen,size: 20,

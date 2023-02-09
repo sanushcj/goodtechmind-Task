@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:goodtechminds/core/constants/constants.dart';
+import '../../core/constants/constants.dart';
 import 'widgets/blueborderbox.dart';
 import 'widgets/firstwidget.dart';
 import 'widgets/forthwidget.dart';
@@ -28,7 +28,7 @@ class FirstPage extends StatelessWidget {
           'Hoichoi Restaurent',
           style: TextStyle(color: Colors.black),
         ),
-        actions: const [
+        actions: const <Widget> [
           Icon(Icons.search, color: Colors.black),
           SizedBox(
             width: 20,
@@ -40,18 +40,16 @@ class FirstPage extends StatelessWidget {
         ],
       ),
       body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+          children: <Widget>[
             SizedBox(
               height: 100,
               width: double.infinity,
               child: Stack(
-                clipBehavior: Clip.hardEdge,
-                children: [
+                children: <Widget>[
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
+                    children: const <Widget> [
                       FirstTextWidget(),
                       RatingReviewContainer(),
                     ],
@@ -68,8 +66,8 @@ class FirstPage extends StatelessWidget {
                 child: ListView.separated(
                     shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index) => const BlueborderBox(),
-                    separatorBuilder: (context, index) => rrwidth12,
+                    itemBuilder: (BuildContext context, int index) => const BlueborderBox(),
+                    separatorBuilder: (BuildContext context, int index) => rrwidth12,
                     itemCount: 4),
               ),
             ),
@@ -86,8 +84,8 @@ class FirstPage extends StatelessWidget {
             Expanded(
               child: ListView.separated(
                 shrinkWrap: true,
-                  itemBuilder: (context, index) =>  const SandwichTile(),
-                  separatorBuilder: (context, index) => Divider(),
+                  itemBuilder: (BuildContext context, int index) =>  const SandwichTile(),
+                  separatorBuilder: (BuildContext context, int index) => const Divider(),
                   itemCount: 10),
             ),
            

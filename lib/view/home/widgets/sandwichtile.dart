@@ -18,12 +18,12 @@ class SandwichTile extends StatelessWidget {
         color: rrwhite,
         child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+            children: <Widget>[
               SizedBox(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                  children: <Widget> [
                     SizedBox(
                       width: 20,
                       height: 20,
@@ -34,7 +34,7 @@ class SandwichTile extends StatelessWidget {
                             fontWeight: FontWeight.bold, fontSize: 14)),
                     rrHeight12,
                     Row(
-                      children: [
+                      children: <Widget> [
                         Container(
                           width: 90,
                           height: 20,
@@ -43,7 +43,7 @@ class SandwichTile extends StatelessWidget {
                               borderRadius: BorderRadius.circular(4)),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
+                            children: const <Widget> [
                               Icon(
                                 Icons.star,
                                 color: Colors.amber,
@@ -79,7 +79,7 @@ class SandwichTile extends StatelessWidget {
                                 fontSize: 10))
                       ],
                     ),
-                    const Text('\$180',
+                    const Text(r'$180',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 10)),
                     const Text('Veg | Super Sandwich of India',
@@ -88,11 +88,11 @@ class SandwichTile extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
+              SizedBox(
                   height: 95,
                   width: 90,
                   child: Stack(
-                    children: [
+                    children: <Widget>[
                       Container(
                         height: 80,
                         width: 80,
@@ -114,7 +114,7 @@ class SandwichTile extends StatelessWidget {
                           height: 20,
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.red),
-                              color: Color.fromARGB(255, 255, 175, 170)),
+                              color: const Color.fromARGB(255, 255, 175, 170)),
                           child: const Text('ADD',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
